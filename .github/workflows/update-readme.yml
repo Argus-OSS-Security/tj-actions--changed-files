@@ -4,11 +4,12 @@ permissions:
   contents: write
   pull-requests: write
 
-on:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+# 
 jobs:
   sync-assets:
     runs-on: ubuntu-latest

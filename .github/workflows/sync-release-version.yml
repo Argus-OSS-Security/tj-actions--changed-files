@@ -4,11 +4,12 @@ permissions:
    contents: write
    pull-requests: write
 
-on:
-  release:
-    types: [published]
-
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   release:
+#     types: [published]
+# 
+# 
 jobs:
   update-version:
     runs-on: ubuntu-latest

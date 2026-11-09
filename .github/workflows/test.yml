@@ -3,32 +3,33 @@ name: CI
 permissions:
   contents: read
 
-on:
-  push:
-    branches:
-      - "**"
-  pull_request:
-    types:
-      - assigned
-      - unassigned
-      - labeled
-      - unlabeled
-      - opened
-      - edited
-      - closed
-      - reopened
-      - synchronize
-      - converted_to_draft
-      - ready_for_review
-      - locked
-      - unlocked
-      - review_requested
-      - review_request_removed
-      - auto_merge_enabled
-      - auto_merge_disabled
-    branches:
-      - "**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - "**"
+#   pull_request:
+#     types:
+#       - assigned
+#       - unassigned
+#       - labeled
+#       - unlabeled
+#       - opened
+#       - edited
+#       - closed
+#       - reopened
+#       - synchronize
+#       - converted_to_draft
+#       - ready_for_review
+#       - locked
+#       - unlocked
+#       - review_requested
+#       - review_request_removed
+#       - auto_merge_enabled
+#       - auto_merge_disabled
+#     branches:
+#       - "**"
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

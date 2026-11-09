@@ -3,9 +3,10 @@ name: Issue Comment Job Example
 permissions:
    contents: read
 
-on:
-  issue_comment:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issue_comment:
+# 
 jobs:
   pr_commented:
     # This job only runs for pull request comments

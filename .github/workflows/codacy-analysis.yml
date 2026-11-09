@@ -8,15 +8,16 @@
 
 name: Codacy Security Scan
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ main ]
-  schedule:
-    - cron: '15 16 * * 2'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     # The branches below must be a subset of the branches above
+#     branches: [ main ]
+#   schedule:
+#     - cron: '15 16 * * 2'
+# 
 permissions:
   actions: read
   contents: read

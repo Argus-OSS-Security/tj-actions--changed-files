@@ -3,15 +3,16 @@ name: Manual Triggered Job Example
 permissions:
    contents: read
 
-on:
-  workflow_dispatch:
-    inputs:
-      files:
-        required: false
-        type: string
-        default: |
-          **.md **/**.md test/*.txt
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       files:
+#         required: false
+#         type: string
+#         default: |
+#           **.md **/**.md test/*.txt
+# 
 jobs:
   test:
     name: Test changed-files

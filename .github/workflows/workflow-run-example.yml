@@ -1,9 +1,10 @@
 name: Workflow Run Example
-on:
-  workflow_run:
-    workflows: [Matrix Example]
-    types: [completed]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: [Matrix Example]
+#     types: [completed]
+# 
 permissions:
   contents: read
 
